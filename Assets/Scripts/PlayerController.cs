@@ -29,14 +29,14 @@ public class PlayerController : MonoBehaviour
     public int heal;
     public int gold;
 
-    public float speed;         //скорость бега
-    public float jumpForce,animJump;     //сила прыжка
+    public float speed;         
+    public float jumpForce,animJump;     
 
     public bool m_ToggleChange, m_Play;
 
     public bool canRun = true;
-    public bool isRight = true; //поворот
-    public bool isGrounded;     //на земле
+    public bool isRight = true; 
+    public bool isGrounded;     //проверка земли
     
     public string currentState, currentAnimation,previousState;     
 
@@ -101,7 +101,7 @@ public class PlayerController : MonoBehaviour
             if (!audioJump.isPlaying) audioShoot.Play(); 
         }        
     }
-    void Jump() //прыжок
+    void Jump() 
     {
 
         if (Input.GetAxis("Jump") > 0)
@@ -143,7 +143,7 @@ public class PlayerController : MonoBehaviour
         {
             transform.Rotate(0f,180f,0f);            
         }
-    }   //поворот
+    }   
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == ("Checkpoint"))
@@ -154,7 +154,7 @@ public class PlayerController : MonoBehaviour
         }
         else if (collision.gameObject.tag == ("Gold")) audioCoin.Play();
     }
-    void Save()         //чекпоинт
+    void Save()         
     {
         PlayerPrefs.SetFloat("PlayerX", _player.transform.position.x);
         PlayerPrefs.SetFloat("PlayerY", _player.transform.position.y+2f);
@@ -165,7 +165,7 @@ public class PlayerController : MonoBehaviour
 
        // Debug.Log("SavePlay");
     }
-    void Load()         //загрузка
+    void Load()         
     {
         if (!_player)
         {
@@ -180,7 +180,7 @@ public class PlayerController : MonoBehaviour
        // Debug.Log("Load");
         
     }
-    public void Death()        //смерть
+    public void Death()        
     {
         if (heal <= 0)
         {
@@ -234,7 +234,7 @@ public class PlayerController : MonoBehaviour
         else SetAnimation(dead, false, 1f);
         currentState = state;
     }
-    public void TakeDamagePlayer(int damage)             //нанесение урона
+    public void TakeDamagePlayer(int damage)             
     {
         heal -= damage;
     }

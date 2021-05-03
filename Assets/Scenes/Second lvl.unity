@@ -4471,7 +4471,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1473476645}
-  posX: 0
+  posY: 0
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -4543,6 +4543,22 @@ PrefabInstance:
     - target: {fileID: 7204650925881752497, guid: ded91f6a88a299b448beb57a578c36a7, type: 3}
       propertyPath: m_Name
       value: Canvas (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7204650925881752499, guid: ded91f6a88a299b448beb57a578c36a7, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7204650925881752499, guid: ded91f6a88a299b448beb57a578c36a7, type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7204650925881752499, guid: ded91f6a88a299b448beb57a578c36a7, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 7204650925881752499, guid: ded91f6a88a299b448beb57a578c36a7, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
       objectReference: {fileID: 0}
     - target: {fileID: 7204650925881752509, guid: ded91f6a88a299b448beb57a578c36a7, type: 3}
       propertyPath: m_LocalPosition.x
